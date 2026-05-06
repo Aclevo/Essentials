@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Debug"/>
+		<BuildType Name="Release"/>
+		<BuildType Name="MinSizeRel"/>
+		<BuildType Name="RelWithDebInfo"/>
+		<Platform Name="x64"/>
+	</Configurations>
+	<Project Path="OpenOmni_rc_lib.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="f916092a-e449-3dda-b151-29bf7133f4fe">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="OpenOmni_vst3_helper.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="db950464-c868-3048-bad4-0fd32e8c64cb">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Folder Name="/CMakePredefinedTargets/">
+		<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="aeda0cc1-ac62-3802-b59e-3365a3800f57" DefaultStartup="true">
+			<BuildDependency Project="OpenOmni.vcxproj"/>
+			<BuildDependency Project="OpenOmni_Standalone.vcxproj"/>
+			<BuildDependency Project="OpenOmni_VST3.vcxproj"/>
+			<BuildDependency Project="OpenOmni_rc_lib.vcxproj"/>
+			<BuildDependency Project="OpenOmni_vst3_helper.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		</Project>
+		<Project Path="INSTALL.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="ed6bd60d-898d-305b-9da4-cba9fb6059bf">
+			<BuildDependency Project="ALL_BUILD.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="MinSizeRel|*" Project="false"/>
+			<Build Solution="RelWithDebInfo|*" Project="false"/>
+		</Project>
+		<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="43555644-87eb-3d07-a0ae-d4e1aa0c687a"/>
+	</Folder>
+	<Folder Name="/OpenOmni/">
+		<Project Path="OpenOmni.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="d52c84f6-9010-338a-baa4-686ddf94366d">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		</Project>
+		<Project Path="OpenOmni_All.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="cbac2382-8274-3db5-bf6a-114e1144c628">
+			<BuildDependency Project="OpenOmni_Standalone.vcxproj"/>
+			<BuildDependency Project="OpenOmni_VST3.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="MinSizeRel|*" Project="false"/>
+			<Build Solution="RelWithDebInfo|*" Project="false"/>
+		</Project>
+		<Project Path="OpenOmni_Standalone.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="bae14bc9-11a0-3a9a-bb0a-f552d6c50d49">
+			<BuildDependency Project="OpenOmni.vcxproj"/>
+			<BuildDependency Project="OpenOmni_rc_lib.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		</Project>
+		<Project Path="OpenOmni_VST3.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="4a680897-c846-3a2e-8055-149a5af5172b">
+			<BuildDependency Project="OpenOmni.vcxproj"/>
+			<BuildDependency Project="OpenOmni_rc_lib.vcxproj"/>
+			<BuildDependency Project="OpenOmni_vst3_helper.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		</Project>
+	</Folder>
+</Solution>

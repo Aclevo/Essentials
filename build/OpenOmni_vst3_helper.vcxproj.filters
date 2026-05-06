@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rpnerd\Desktop\Essentials\cpp_version (USE THIS)\Essentials\cpp\build\_deps\juce-src\modules\juce_audio_plugin_client\VST3\juce_VST3ManifestHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rpnerd\Desktop\Essentials\cpp_version (USE THIS)\Essentials\cpp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BA76D8FE-9CB5-3140-A5AD-19164D48D401}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
